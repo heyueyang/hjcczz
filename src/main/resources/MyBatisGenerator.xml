@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+   <!-- <classPathEntry location="E:/hjjczx2020new/repository/mysql/mysql-connector-java/8.0.21/mysql-connector-java-8.0.21.jar"/>
+    --><context id="productRelease">
+        <property name="mergeable" value="false" />
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/hjjczz?serverTimezone=GMT%2B8"
+                        userId="root" password="mysql" >
+            <property name="nullCatalogMeansCurrent" value="true"/>
+        </jdbcConnection>
+        <javaModelGenerator targetPackage="com.sxxa.hjjczz.entity"
+                            targetProject="src/main/java" />
+
+        <sqlMapGenerator targetPackage="mapper"
+                         targetProject="src/main/resources" />
+
+        <javaClientGenerator targetPackage="com.sxxa.hjjczz.dao"
+                             targetProject="src/main/java" type="XMLMAPPER" />
+
+
+        <!--<table tableName="t_hjjczz_formslist_field" />
+        <table tableName="t_hjjczz_tablelist" />
+        <table tableName="t_hjjczz_tdly" />
+        <table tableName="t_hjjczz_area" />
+        <table tableName="t_hjjczz_ei" />
+        <table tableName="t_hjjczz_gdp" />
+        <table tableName="t_hjjczz_gzsx" />
+        <table tableName="t_hjjczz_hjxzzs" />
+        <table tableName="t_hjjczz_rktj" />
+        <table tableName="t_hjjczz_sbsx" />
+        <table tableName="t_hjjczz_snsx" />
+        <table tableName="t_hjjczz_sthjzlei" />
+        <table tableName="t_hjjczz_swfdzs" />
+        <table tableName="t_hjjczz_swmdzs" />
+        <table tableName="t_hjjczz_tdxpzs" />
+        <table tableName="t_hjjczz_wlyddpgd" />
+        <table tableName="t_hjjczz_wrfhzs" />
+        <table tableName="t_hjjczz_zbfgzs" />
+        <table tableName="t_hjjczz_tdzyjz" />-->
+     <table tableName="t_hjjczz_zbfgzs" />
+    </context>
+</generatorConfiguration>
